@@ -1,3 +1,6 @@
+Voici le code complet, prêt à copier-coller :
+
+```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -425,7 +428,6 @@
 <div class="view hidden" id="viewLinks">
   <div class="static-section">
     <h2>Liens</h2>
-    <a class="link-btn" href="#">Canal Telegram</a>
     <a class="link-btn" href="#">Instagram</a>
     <a class="link-btn" href="#">Contact WhatsApp</a>
   </div>
@@ -502,19 +504,17 @@
   var WHATSAPP_NUMBER = '33751727841';
 
   var CATS = [
-    { id:'Beuh', label:'Cali', sub:'Cultures selectionnees', icon:'\u{1F33F}', glow:'linear-gradient(135deg, #123B1E, #1E5E31 55%, #5CFF7A)' },
-    { id:'hash', label:'frozen/static/jaune', sub:'extraction a froid', icon:'\u{1F4A7}', glow:'linear-gradient(135deg, #3A2A05, #7A4E0C 55%, #FFB020)' },
-    { id:'cocaine', label:'ecaille de poisson', sub:'pure a 98%', icon:'\u{1F7E4}', glow:'linear-gradient(135deg, #2A0F3F, #5B2E7A 55%, #C24DFF)' },
-    { id:'infusions', label:'Infusions CBD', sub:'Boites de 20 sachets', icon:'\u{1F375}', glow:'linear-gradient(135deg, #052A33, #0C5A6B 55%, #2FE0FF)' },
-    { id:'cosmetiques', label:'Cosmetiques CBD', sub:'Soins et baumes', icon:'\u{1F9F4}', glow:'linear-gradient(135deg, #3A0A28, #7A1C57 55%, #FF2E9A)' },
+    { id:'fleurs', label:'Fleurs CBD', sub:'Cultures selectionnees', icon:'\u{1F33F}', glow:'linear-gradient(135deg, #123B1E, #1E5E31 55%, #5CFF7A)' },
+    { id:'huiles', label:'Huiles CBD', sub:'Full & broad spectrum', icon:'\u{1F4A7}', glow:'linear-gradient(135deg, #3A2A05, #7A4E0C 55%, #FFB020)' },
+    { id:'resines', label:'Resines CBD', sub:'Extraction a froid', icon:'\u{1F7E4}', glow:'linear-gradient(135deg, #2A0F3F, #5B2E7A 55%, #C24DFF)' },
   ];
-  var CAT_COLORS = { fleurs:'#5CFF7A', huiles:'#FFB020', resines:'#C24DFF', infusions:'#2FE0FF', cosmetiques:'#FF2E9A' };
+  var CAT_COLORS = { fleurs:'#5CFF7A', huiles:'#FFB020', resines:'#C24DFF' };
 
   var PRODUCTS = [
-    { id:'p1', cat:'fleurs', icon:'\u{1F33F}', image:'', name:'Lemon Haze', farm:'Cali farm monster', thc:'60%',
+    { id:'p1', cat:'fleurs', icon:'\u{1F33F}', image:'', name:'Lemon Haze CBD', farm:'Culture France', cbd:'12%',
       desc:"Aromes d'agrumes marques, tetes denses et bien formees, sechage lent pour preserver les terpenes.",
       tiers:[{label:'3g',price:15},{label:'5g',price:22},{label:'10g',price:38},{label:'20g',price:65}] },
-    { id:'p2', cat:'fleurs', icon:'\u{1F33F}', image:'', name:'Purple Kush ', farm:'cali farm monster', thc:'47%',
+    { id:'p2', cat:'fleurs', icon:'\u{1F33F}', image:'', name:'Purple Kush CBD', farm:'Culture France', cbd:'9%',
       desc:"Notes fruits rouges et sous-bois, coloris violaces typiques, texture collante.",
       tiers:[{label:'3g',price:14},{label:'5g',price:20},{label:'10g',price:36},{label:'20g',price:60}] },
     { id:'p3', cat:'huiles', icon:'\u{1F4A7}', image:'', name:'Huile CBD Full Spectrum', farm:'Extraction CO2', cbd:'10%',
@@ -526,15 +526,6 @@
     { id:'p5', cat:'resines', icon:'\u{1F7E4}', image:'', name:'Resine Ice-O-Lator', farm:'Extraction a froid', cbd:'20%',
       desc:"Texture fondante, tamisage fin, conservation au frais recommandee.",
       tiers:[{label:'2g',price:24},{label:'5g',price:55}] },
-    { id:'p6', cat:'infusions', icon:'\u{1F375}', image:'', name:'Infusion CBD Camomille', farm:'Boite de 20 sachets', cbd:'',
-      desc:"Melange camomille et chanvre, a infuser 5 minutes.",
-      tiers:[{label:'Boite',price:9.9}] },
-    { id:'p7', cat:'infusions', icon:'\u{1F375}', image:'', name:'Infusion CBD Menthe', farm:'Boite de 20 sachets', cbd:'',
-      desc:"Melange menthe poivree et chanvre, arome frais.",
-      tiers:[{label:'Boite',price:9.9}] },
-    { id:'p8', cat:'cosmetiques', icon:'\u{1F9F4}', image:'', name:'Baume CBD apaisant', farm:'Usage local', cbd:'2%',
-      desc:"Pot 50ml, texture riche, a base de beurre de karite.",
-      tiers:[{label:'50ml',price:19.9}] },
   ];
 
   var cart = {};
